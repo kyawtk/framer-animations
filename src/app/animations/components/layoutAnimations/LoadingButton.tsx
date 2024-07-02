@@ -15,8 +15,8 @@ export default function SmoothButton() {
   const [buttonState, setButtonState] = useState("idle");
 
   return (
-    <ScreenContainer >
-     
+    <ScreenContainer>
+      <div className="overflow-hidden">
         <button
         style={{overflow:'hidden'}}
           className="bg-blue-500 rounded-lg z-10 overflow-hidden flex-center py-1 px-4 min-w-[300px]"

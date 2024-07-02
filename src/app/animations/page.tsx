@@ -26,6 +26,7 @@ import CenterContent from "./components/CenterContent";
 import SlidingNav from "./components/layoutAnimations/SlidingNav";
 import SmoothButton from "./components/layoutAnimations/LoadingButton";
 import MoveToTrash from "./components/layoutAnimations/MoveToTrash";
+import ChatBubble from "./components/layoutAnimations/ChatBubble";
 
 const Page = () => {
   const { scrollY } = useScroll();
@@ -42,10 +43,11 @@ const Page = () => {
   });
   return (
     <div className="min-h-screen bg-[#083741] ">
+        <ChatBubble/>
         <MoveToTrash/>
         <SmoothButton/>
         <SlidingNav/>
-      <CenterContent/>
+      {/* <CenterContent/> */}
        {/* <motion.nav
         animate={hidden ? 'hidden' : 'visible'}
         variants={{ visible: { y: 0  }, hidden: { y: "-100%" } }}
