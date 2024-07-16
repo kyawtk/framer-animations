@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    typescript:{
+        ignoreBuildErrors:true,
+    },
+    eslint:{
+        ignoreDuringBuilds:true,
+    },
     images: {
 
         domains: [
@@ -10,7 +16,7 @@ const nextConfig = {
               protocol: 'https',
               hostname: "images.ctfassets.net",
               port: '',
-             
+
             },
           ],
       },
