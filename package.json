@@ -9,17 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codesandbox/sandpack-react": "^2.18.0",
+    "@contentful/rich-text-react-renderer": "^15.22.1",
+    "contentful": "^10.12.8",
     "framer-motion": "^11.2.6",
+    "lucide-react": "^0.408.0",
     "next": "14.2.3",
+    "next-auth": "^4.24.7",
+    "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-use-measure": "^2.1.1",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.3.0",
+    "theme-change": "^2.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "daisyui": "^4.12.10",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.3",
     "postcss": "^8.4.38",

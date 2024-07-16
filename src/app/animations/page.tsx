@@ -42,7 +42,8 @@ const Page = () => {
     }
   });
   return (
-    <div className="min-h-screen bg-[#083741] ">
+    <div className="min-h-screen  ">
+        <p className="font-serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis rem quidem, rerum quasi magnam iste ad dolore consectetur at earum minus harum eligendi incidunt possimus, aperiam, officia aut ratione eum!</p>
         <ChatBubble/>
         <MoveToTrash/>
         <SmoothButton/>

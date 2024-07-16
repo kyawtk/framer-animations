@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Allan } from "next/font/google";
+import { Inter, Allan, Montserrat, PT_Serif } from "next/font/google";
 import "./globals.css";
 
-const allan = Allan({
+import AuthProvider from "./SessionProvider";
+import ThemeProviderWrapper from "./ThemeProvider";
+import NavBar from "./components/NavBar/NavBar";
+const ptSerif = PT_Serif({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-allan",
+  variable: "--font-ptserif",
   display: "swap",
 });
 
@@ -21,7 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${allan.variable} font-sans`}>{children}</body>
+      <body className={`${ptSerif.variable} font-sans container`}>
+        <ThemeProviderWrapper>
+          <AuthProvider>
+            <NavBar />
+            {children}
+          </AuthProvider>
+        </ThemeProviderWrapper>
+      </body>
     </html>
   );
 }
